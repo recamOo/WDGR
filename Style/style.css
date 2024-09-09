@@ -8,6 +8,12 @@
 
 body{
     background-color: black;
+    background-image: url('/WDGR-main/assets/Artboard\ 1.jpg'); /* Caminho relativo da imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
 }
 
 p{
@@ -39,10 +45,34 @@ p{
 
 .whatsapp{
     position: fixed;
-    background-color: red;
     display: inline-block;
     width: 100px;
     height: 100px;
     bottom: 10px;
     right: 10px;
+}
+
+.fundo__imagem{
+    background-image: url('/WDGR-main/assets/Artboard\ 1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.conteudo-central {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+.conteudo-central h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
 }
