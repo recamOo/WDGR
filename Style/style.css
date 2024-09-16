@@ -1,78 +1,25 @@
+@import url(/Style/section1.css);
+@import url(/Style/aboutUs.css);
+@font-face {
+    font-family: Horizon;
+    src: url(../Fonts/horizon.otf) format('opentype'), url(../Fonts/horizon_outlined.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: CODMW;
+    src: url(../Assets/Fonts/fontTeste/ModernWarfare-8MM6z.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-  }
-
-body{
-    background-color: black;
-    background-image: url('/WDGR-main/assets/Artboard\ 1.jpg'); /* Caminho relativo da imagem */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0;
 }
-
-p{
-    color: white;
-    text-align: center;
-}
-
-.b1{
-    color: white;
-    text-align: center;
-}
-
-.conteiner{
-    display: flex;
-    column-gap: 20px;
-    width: 100%;
-    height: 100px;
-}
-
-.conteiner__motivo{
-    background-color: #d51e1e;
-    font-size: 1.25rem;
-}
-
-.lenk{
-    text-decoration: none;
-    color: #d51e1e;
-}
-
-.whatsapp{
-    position: fixed;
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    bottom: 10px;
-    right: 10px;
-}
-
-.fundo__imagem{
-    background-image: url('/WDGR-main/assets/Artboard\ 1.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-}
-
-.conteudo-central {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.8); 
-    padding: 20px;
-    border-radius: 10px; 
-}
-
-.conteudo-central h1 {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    color: #333;
+:root{
+    --fonte-principal: 'Horizon';
+    --buceta-cabeluda: 'CODMW';
+    --cor-da-fonte: #EEEEEE;
+    --cor-principal: #cd1818;
 }

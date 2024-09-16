@@ -1,0 +1,7 @@
+.container{
+    background-image: url(/Assets/PORTIFÓLIO.png), url(/Assets/Bkp.png), url(/Assets/Group\ 1.png), url(/Assets/Gradient\ Fill\ 2\ copy.jpg);
+    height: 100vh;
+    background-size: 740px 295px,1250px 445px, 50px 255px, cover;
+    background-position: center, left bottom, top right, center;
+    background-repeat: no-repeat;
+}
