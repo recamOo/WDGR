@@ -1,5 +1,6 @@
 @import url(/Style/section1.css);
 @import url(/Style/aboutUs.css);
+@import url(/Style/projetos.css);
 @font-face {
     font-family: Horizon;
     src: url(../Fonts/horizon.otf) format('opentype'), url(../Fonts/horizon_outlined.otf);

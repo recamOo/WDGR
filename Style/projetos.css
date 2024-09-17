@@ -1,0 +1,129 @@
+.container__projetos{
+    background-image: url(../Assets/Gradient\ Fill\ 2\ copy\ 3.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--cor-da-fonte);
+    font-family: var(--fonte-principal);
+    font-size: 30px;
+}
+h4{
+    margin: 20px;
+    text-align: center;
+}
+
+
+/* Talvez de merda na hora de deixar responsivo para mobile por causa do botão está acompanhando a imagem e eu estava com preguiça de arrumar (lebrar de sempre usar imagens do mesmo tamanho) de: Gabriel para: Gabriel */
+.container__projetos-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    max-height: 1250px;
+    margin: 40px;
+    padding: 0 40px;
+
+
+   background: rgba(255, 255, 255,0.15);
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+   border-radius: 40px;
+   border: 1px solid rgba(255, 255,255,0.3);
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   
+   overflow: hidden;
+   position: relative; 
+   
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+.slides{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 400%; /* Ajusta conforme o numero de projetos */
+}
+.slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+.slide img{
+    max-width: 100vh;
+    max-height: 100vh;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+.slide-content{
+    background-color: rgba(255, 255,255,0.6);
+    padding: 10px;
+    border-radius: 10px;
+    width: auto;
+    margin-top: 10px;
+    text-align: center;
+    align-self: center;
+    margin-top: auto;
+}
+.slide-content:hover{
+    color: var(--cor-da-fonte);
+    background: var(--cor-principal);
+    box-shadow: 0 0 10px var(--cor-principal), 0 0 40px var(--cor-principal), 0 0 80px var(--cor-principal);
+    transition-delay: 100ms;
+}
+.slide-content a{
+    color: var(--cor-da-fonte);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255,255,0.5);
+    border: none;
+    border-radius: 10px;
+    color: var(--cor-da-fonte);
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+.prev{
+    left: 300px;
+}
+.next{
+    right: 300px;
+}
+.prev:hover, .next:hover{
+    color: var(--cor-da-fonte);
+    background: var(--cor-principal);
+    box-shadow: 0 0 10px var(--cor-principal), 0 0 40px var(--cor-principal), 0 0 80px var(--cor-principal);
+    transition-delay: 100ms;
+}
+
